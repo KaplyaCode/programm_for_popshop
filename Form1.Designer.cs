@@ -63,6 +63,15 @@ namespace _02
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
+			this.tabControl1 = new System.Windows.Forms.TabControl();
+			this.tabPage1 = new System.Windows.Forms.TabPage();
+			this.tabPage2 = new System.Windows.Forms.TabPage();
+			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+			this.label8 = new System.Windows.Forms.Label();
+			this.label9 = new System.Windows.Forms.Label();
+			this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+			this.button4 = new System.Windows.Forms.Button();
+			this.label10 = new System.Windows.Forms.Label();
 			this.creationPanel.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.groupBox1.SuspendLayout();
@@ -72,6 +81,9 @@ namespace _02
 			((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
 			this.menuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			this.tabControl1.SuspendLayout();
+			this.tabPage1.SuspendLayout();
+			this.tabPage2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// timer1
@@ -86,9 +98,9 @@ namespace _02
 			this.creationPanel.Controls.Add(this.panel1);
 			this.creationPanel.Controls.Add(this.listBox1);
 			this.creationPanel.Controls.Add(this.panel2);
-			this.creationPanel.Location = new System.Drawing.Point(0, 35);
+			this.creationPanel.Location = new System.Drawing.Point(3, 30);
 			this.creationPanel.Name = "creationPanel";
-			this.creationPanel.Size = new System.Drawing.Size(626, 327);
+			this.creationPanel.Size = new System.Drawing.Size(626, 324);
 			this.creationPanel.TabIndex = 5;
 			// 
 			// panel1
@@ -102,7 +114,7 @@ namespace _02
 			this.panel1.Controls.Add(this.checkBox1);
 			this.panel1.Location = new System.Drawing.Point(7, 3);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(197, 318);
+			this.panel1.Size = new System.Drawing.Size(197, 316);
 			this.panel1.TabIndex = 4;
 			// 
 			// label1
@@ -214,7 +226,7 @@ namespace _02
 			this.panel2.Controls.Add(this.checkedListBox1);
 			this.panel2.Location = new System.Drawing.Point(210, 3);
 			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(200, 318);
+			this.panel2.Size = new System.Drawing.Size(200, 316);
 			this.panel2.TabIndex = 6;
 			// 
 			// button2
@@ -260,7 +272,7 @@ namespace _02
 			this.personalizationPanel.Controls.Add(this.button3);
 			this.personalizationPanel.Controls.Add(this.label3);
 			this.personalizationPanel.Controls.Add(this.comboBox1);
-			this.personalizationPanel.Location = new System.Drawing.Point(3, 32);
+			this.personalizationPanel.Location = new System.Drawing.Point(6, 27);
 			this.personalizationPanel.Name = "personalizationPanel";
 			this.personalizationPanel.Size = new System.Drawing.Size(499, 327);
 			this.personalizationPanel.TabIndex = 6;
@@ -344,12 +356,13 @@ namespace _02
 			// 
 			// menuStrip1
 			// 
+			this.menuStrip1.BackColor = System.Drawing.Color.Aquamarine;
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.creationToolStripMenuItem,
             this.personalizationToolStripMenuItem});
-			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+			this.menuStrip1.Location = new System.Drawing.Point(3, 3);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(917, 24);
+			this.menuStrip1.Size = new System.Drawing.Size(903, 24);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -371,7 +384,7 @@ namespace _02
 			// 
 			this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
 			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.pictureBox1.Location = new System.Drawing.Point(0, 368);
+			this.pictureBox1.Location = new System.Drawing.Point(4, 397);
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.Size = new System.Drawing.Size(87, 65);
 			this.pictureBox1.TabIndex = 7;
@@ -382,7 +395,7 @@ namespace _02
 			this.label6.AutoSize = true;
 			this.label6.BackColor = System.Drawing.Color.Transparent;
 			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label6.Location = new System.Drawing.Point(78, 384);
+			this.label6.Location = new System.Drawing.Point(97, 410);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(153, 20);
 			this.label6.TabIndex = 8;
@@ -392,26 +405,126 @@ namespace _02
 			// 
 			this.label7.AutoSize = true;
 			this.label7.BackColor = System.Drawing.Color.Transparent;
-			this.label7.Location = new System.Drawing.Point(721, 398);
+			this.label7.Location = new System.Drawing.Point(666, 429);
 			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(60, 24);
+			this.label7.Size = new System.Drawing.Size(119, 24);
 			this.label7.TabIndex = 9;
-			this.label7.Text = "label7";
+			this.label7.Text = "session_time";
+			// 
+			// tabControl1
+			// 
+			this.tabControl1.Controls.Add(this.tabPage1);
+			this.tabControl1.Controls.Add(this.tabPage2);
+			this.tabControl1.Dock = System.Windows.Forms.DockStyle.Top;
+			this.tabControl1.Location = new System.Drawing.Point(0, 0);
+			this.tabControl1.Name = "tabControl1";
+			this.tabControl1.SelectedIndex = 0;
+			this.tabControl1.Size = new System.Drawing.Size(917, 391);
+			this.tabControl1.TabIndex = 10;
+			// 
+			// tabPage1
+			// 
+			this.tabPage1.BackColor = System.Drawing.Color.Aquamarine;
+			this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.tabPage1.Controls.Add(this.creationPanel);
+			this.tabPage1.Controls.Add(this.menuStrip1);
+			this.tabPage1.Controls.Add(this.personalizationPanel);
+			this.tabPage1.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.tabPage1.Location = new System.Drawing.Point(4, 33);
+			this.tabPage1.Name = "tabPage1";
+			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+			this.tabPage1.Size = new System.Drawing.Size(909, 354);
+			this.tabPage1.TabIndex = 0;
+			this.tabPage1.Text = "Account";
+			// 
+			// tabPage2
+			// 
+			this.tabPage2.BackColor = System.Drawing.Color.Aquamarine;
+			this.tabPage2.Controls.Add(this.label10);
+			this.tabPage2.Controls.Add(this.button4);
+			this.tabPage2.Controls.Add(this.dateTimePicker2);
+			this.tabPage2.Controls.Add(this.label9);
+			this.tabPage2.Controls.Add(this.label8);
+			this.tabPage2.Controls.Add(this.dateTimePicker1);
+			this.tabPage2.ForeColor = System.Drawing.SystemColors.WindowText;
+			this.tabPage2.Location = new System.Drawing.Point(4, 33);
+			this.tabPage2.Name = "tabPage2";
+			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+			this.tabPage2.Size = new System.Drawing.Size(909, 354);
+			this.tabPage2.TabIndex = 1;
+			this.tabPage2.Text = "Operations";
+			// 
+			// dateTimePicker1
+			// 
+			this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
+			this.dateTimePicker1.Checked = false;
+			this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+			this.dateTimePicker1.Location = new System.Drawing.Point(200, 3);
+			this.dateTimePicker1.Name = "dateTimePicker1";
+			this.dateTimePicker1.Size = new System.Drawing.Size(109, 29);
+			this.dateTimePicker1.TabIndex = 7;
+			// 
+			// label8
+			// 
+			this.label8.AutoSize = true;
+			this.label8.Location = new System.Drawing.Point(6, 7);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(188, 24);
+			this.label8.TabIndex = 8;
+			this.label8.Text = "Find operations from:";
+			// 
+			// label9
+			// 
+			this.label9.AutoSize = true;
+			this.label9.Location = new System.Drawing.Point(315, 7);
+			this.label9.Name = "label9";
+			this.label9.Size = new System.Drawing.Size(33, 24);
+			this.label9.TabIndex = 9;
+			this.label9.Text = "To";
+			// 
+			// dateTimePicker2
+			// 
+			this.dateTimePicker2.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
+			this.dateTimePicker2.Checked = false;
+			this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+			this.dateTimePicker2.Location = new System.Drawing.Point(354, 3);
+			this.dateTimePicker2.Name = "dateTimePicker2";
+			this.dateTimePicker2.Size = new System.Drawing.Size(109, 29);
+			this.dateTimePicker2.TabIndex = 11;
+			// 
+			// button4
+			// 
+			this.button4.Location = new System.Drawing.Point(469, 3);
+			this.button4.Name = "button4";
+			this.button4.Size = new System.Drawing.Size(153, 29);
+			this.button4.TabIndex = 12;
+			this.button4.Text = "Find matches";
+			this.button4.UseVisualStyleBackColor = true;
+			this.button4.Click += new System.EventHandler(this.button4_Click);
+			// 
+			// label10
+			// 
+			this.label10.AutoSize = true;
+			this.label10.Location = new System.Drawing.Point(8, 40);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(70, 24);
+			this.label10.TabIndex = 13;
+			this.label10.Text = "label10";
+			this.label10.Visible = false;
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackgroundImage = global::_02.Properties.Resources._1953886;
+			this.BackColor = System.Drawing.SystemColors.MenuHighlight;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.ClientSize = new System.Drawing.Size(917, 431);
+			this.ClientSize = new System.Drawing.Size(917, 462);
 			this.Controls.Add(this.label7);
 			this.Controls.Add(this.label6);
 			this.Controls.Add(this.pictureBox1);
-			this.Controls.Add(this.creationPanel);
-			this.Controls.Add(this.menuStrip1);
-			this.Controls.Add(this.personalizationPanel);
+			this.Controls.Add(this.tabControl1);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Margin = new System.Windows.Forms.Padding(6);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
@@ -433,6 +546,11 @@ namespace _02
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			this.tabControl1.ResumeLayout(false);
+			this.tabPage1.ResumeLayout(false);
+			this.tabPage1.PerformLayout();
+			this.tabPage2.ResumeLayout(false);
+			this.tabPage2.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -472,6 +590,15 @@ namespace _02
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label7;
+		private System.Windows.Forms.TabControl tabControl1;
+		private System.Windows.Forms.TabPage tabPage1;
+		private System.Windows.Forms.TabPage tabPage2;
+		private System.Windows.Forms.DateTimePicker dateTimePicker1;
+		private System.Windows.Forms.DateTimePicker dateTimePicker2;
+		private System.Windows.Forms.Label label9;
+		private System.Windows.Forms.Label label8;
+		private System.Windows.Forms.Label label10;
+		private System.Windows.Forms.Button button4;
 	}
 }
 

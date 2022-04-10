@@ -141,7 +141,7 @@ namespace _02
 
 				while (qt > 0)
 				{
-					numericUpDown1.Value = qt - 1;
+					numericUpDown1.Value = qt -1;
 					progressBar1.Value++;
 					qt--;
 					await Task.Delay(trackBar1.Value);
@@ -158,17 +158,13 @@ namespace _02
 
 		private void creationToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			foreach  (Panel panel in Controls.OfType<Panel>())
-				panel.Visible = false;
-
+			personalizationPanel.Visible = false;
 			creationPanel.Visible = true;
 		}
 
 		private void personalizationToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			foreach (Panel panel in Controls.OfType<Panel>())
-				panel.Visible = false;
-
+			creationPanel.Visible = false;
 			personalizationPanel.Visible = true;
 		}
 
@@ -176,6 +172,13 @@ namespace _02
 		{
 			timer++;
 			label7.Text = $"Session time: {(timer / 3600)%60}:{(timer / 60)%60}:{timer%60}         ";
+
+		}
+
+		private void button4_Click(object sender, EventArgs e)
+		{
+			label10.Text = "Matches are not found"; 
+			label10.Visible = true;
 		}
 	}
 }
