@@ -68,7 +68,13 @@ namespace _02
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
+			this.checkBox2 = new System.Windows.Forms.CheckBox();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.identifier = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.summ = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.fio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.button6 = new System.Windows.Forms.Button();
 			this.button5 = new System.Windows.Forms.Button();
 			this.label11 = new System.Windows.Forms.Label();
@@ -87,12 +93,6 @@ namespace _02
 			this.helpProvider1 = new System.Windows.Forms.HelpProvider();
 			this.imageList1 = new System.Windows.Forms.ImageList(this.components);
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.identifier = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.summ = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.fio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.checkBox2 = new System.Windows.Forms.CheckBox();
 			this.creationPanel.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.groupBoxPosition.SuspendLayout();
@@ -112,6 +112,7 @@ namespace _02
 			// 
 			// timer1
 			// 
+			this.timer1.Enabled = true;
 			this.timer1.Interval = 1;
 			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
@@ -513,6 +514,17 @@ namespace _02
 			this.tabPage2.TabIndex = 1;
 			this.tabPage2.Text = "Operations";
 			// 
+			// checkBox2
+			// 
+			this.checkBox2.AutoSize = true;
+			this.checkBox2.Location = new System.Drawing.Point(12, 267);
+			this.checkBox2.Name = "checkBox2";
+			this.checkBox2.Size = new System.Drawing.Size(146, 28);
+			this.checkBox2.TabIndex = 19;
+			this.checkBox2.Text = "Allow the type";
+			this.toolTip_account.SetToolTip(this.checkBox2, "Select if you are admin");
+			this.checkBox2.UseVisualStyleBackColor = true;
+			// 
 			// dataGridView1
 			// 
 			this.dataGridView1.AllowUserToAddRows = false;
@@ -533,6 +545,39 @@ namespace _02
 			this.dataGridView1.RowTemplate.Height = 28;
 			this.dataGridView1.Size = new System.Drawing.Size(727, 310);
 			this.dataGridView1.TabIndex = 18;
+			// 
+			// identifier
+			// 
+			this.identifier.HeaderText = "№";
+			this.identifier.Name = "identifier";
+			this.identifier.ReadOnly = true;
+			this.identifier.Width = 40;
+			// 
+			// type
+			// 
+			this.type.HeaderText = "Type";
+			this.type.Name = "type";
+			this.type.ReadOnly = true;
+			this.type.Width = 250;
+			// 
+			// summ
+			// 
+			this.summ.HeaderText = "Summ";
+			this.summ.Name = "summ";
+			this.summ.ReadOnly = true;
+			// 
+			// fio
+			// 
+			this.fio.HeaderText = "FIO";
+			this.fio.Name = "fio";
+			this.fio.ReadOnly = true;
+			// 
+			// date
+			// 
+			this.date.HeaderText = "Date";
+			this.date.Name = "date";
+			this.date.ReadOnly = true;
+			this.date.Width = 194;
 			// 
 			// button6
 			// 
@@ -702,50 +747,6 @@ namespace _02
 			this.pictureBox1.Size = new System.Drawing.Size(87, 65);
 			this.pictureBox1.TabIndex = 7;
 			this.pictureBox1.TabStop = false;
-			// 
-			// identifier
-			// 
-			this.identifier.HeaderText = "№";
-			this.identifier.Name = "identifier";
-			this.identifier.ReadOnly = true;
-			this.identifier.Width = 40;
-			// 
-			// type
-			// 
-			this.type.HeaderText = "Type";
-			this.type.Name = "type";
-			this.type.ReadOnly = true;
-			this.type.Width = 250;
-			// 
-			// summ
-			// 
-			this.summ.HeaderText = "Summ";
-			this.summ.Name = "summ";
-			this.summ.ReadOnly = true;
-			// 
-			// fio
-			// 
-			this.fio.HeaderText = "FIO";
-			this.fio.Name = "fio";
-			this.fio.ReadOnly = true;
-			// 
-			// date
-			// 
-			this.date.HeaderText = "Date";
-			this.date.Name = "date";
-			this.date.ReadOnly = true;
-			this.date.Width = 194;
-			// 
-			// checkBox2
-			// 
-			this.checkBox2.AutoSize = true;
-			this.checkBox2.Location = new System.Drawing.Point(12, 267);
-			this.checkBox2.Name = "checkBox2";
-			this.checkBox2.Size = new System.Drawing.Size(146, 28);
-			this.checkBox2.TabIndex = 19;
-			this.checkBox2.Text = "Allow the type";
-			this.toolTip_account.SetToolTip(this.checkBox2, "Select if you are admin");
-			this.checkBox2.UseVisualStyleBackColor = true;
 			// 
 			// Form1
 			// 
